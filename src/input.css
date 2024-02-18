@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.test {
+  border: 1px solid red;
+}
+
+@layer components {
+  .container {
+    @apply w-[95%] mx-auto h-full laptop:w-[93%];
+  }
+  .btn_nav {
+    @apply bg-gradient-to-r from-blue_color to-green_color flex justify-center items-center rounded-3xl font-semibold text-xs px-4 py-3;
+  }
+  .btn {
+    @apply bg-gradient-to-r from-blue_color to-green_color flex justify-center items-center font-semibold rounded-[50px] text-sm cursor-pointer px-8 py-6 tv:py-4 iphone:text-xs;
+  }
+  .box {
+    @apply bg-gradient-to-tr from-green_color to-blue_color font-medium text-[15px];
+  }
+  .nav_left ul li {
+    @apply px-4 py-[19px];
+  }
+  .nav_left ul li:hover {
+    @apply bg-gradient-to-tr from-green_color to-blue_color;
+  }
+  .text_span {
+    @apply text-lg font-bold text-text_color;
+  }
+  p {
+    @apply text-xl pc:text-lg text-text_color;
+  }
+  h1 {
+    @apply text-white text-[300%] tv:text-[250%] font-bold;
+  }
+
+  /* arrribute */
+  .atrribute {
+    @apply w-[23%]  relative bg-dark_blue_2_color flex justify-center items-end h-[280px] rounded-lg;
+  }
+  .atrribute .p_key {
+    @apply text-center text-lg w-[90%] text-[#494D6E] mt-5 brightness-150;
+  }
+  .atrribute .one,
+  .atrribute .two,
+  .atrribute .three,
+  .atrribute .four {
+    @apply absolute p-5 rounded-xl -top-12 rotate-[45deg];
+  }
+  .check_box a {
+    @apply font-bold;
+  }
+  .check_box i {
+    @apply text-red_color text-xl;
+  }
+  .check_box div {
+    @apply flex items-center gap-2 mb-4;
+  }
+
+  /* salse_award */
+  .salse_absolute {
+    @apply flex items-center absolute -left-16;
+  }
+  .salse_span_opasity {
+    @apply w-[5vw] h-[5vw] bg-slate-400 flex items-center justify-center rounded-lg bg-opacity-20 rotate-[45deg];
+  }
+  .salse-bg-purple,
+  .salse_bg_blue,
+  .salse_bg_pink {
+    @apply w-10 h-10 inline-block -rotate-[90deg] rounded-md;
+  } 
+  .span_width {
+    @apply inline-block w-20 h-[3px] -mr-3;
+  }
+  .span_circle {
+    @apply inline-block rounded-full p-1 mr-7 z-[1];
+  }
+
+  /* token */
+  .token_counter {
+    @apply p-2 w-1/4 h-[80px] bg-[#ECECEC] flex flex-col items-center relative rounded-2xl;
+  }
+  .token_counter .sub_counter {
+    @apply w-[80%] h-[40px] bg-[#FAFAFA] flex items-center justify-center absolute top-[50px] rounded-3xl text-sm tablet:text-xs;
+  }
+  .img_box .number {
+    @apply text-[#AEDA44] font-bold text-xl;
+  }
+
+  /* algoritm  */
+  .algoritm_span_box {
+    @apply bg-dark_blue_2_color h-3 w-[95%] flex rounded-2xl mb-5 galaxy:mb-5 text-xs font-bold items-center;
+  }
+  .algoritm_span_box .box {
+    @apply h-[100%] rounded-2xl flex items-center;
+  }
+
+  /* pricing */
+  .price {
+    @apply flex flex-col items-center justify-start bg-[#120A3A] w-[23%] rounded-xl relative z-[2];
+  }
+  .sub_price {
+    @apply flex flex-col bg-dark_blue_2_color items-center pt-28 pb-10 gap-5 w-full rounded-2xl;
+  }
+  .sub_bottom_price {
+    @apply bg-[#120A3A] text-center rounded-b-2xl w-full py-5 font-bold;
+  }
+  .img_box_pric {
+    @apply flex items-center justify-center absolute -top-16;
+  }
+
+  /* posting */
+  .post_left a {
+    @apply text-xl pc:text-lg text-text_color brightness-50;
+  }
+  .post_left .white_box {
+    @apply bg-white px-6 pt-4 pb-6 rounded-xl;
+  }
+   /* frequently_question */
+   .question {
+    @apply w-full bg-dark_blue_2_color px-5 mb-4;
+  }
+  .box_question {
+    @apply flex justify-between items-center gap-3 py-6;
+  }
+  .title_question {
+    @apply inline-block text-white font-bold text-lg laptop:text-sm;
+  }
+  .icon_1 {
+    @apply inline-block w-4 bg-text_color h-0.5 absolute;
+  }
+  .icon_2 {
+    @apply inline-block w-4 bg-text_color h-0.5 rotate-90;
+  } 
+
+  /* footer */
+  .item_footer {
+    @apply text-white relative inline-block;
+  }
+  .item_footer span {
+    @apply w-full absolute bg-white top-[30px] -right-0;
+  }
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+@media ((min-width: 640px)and (max-width: 830px)) {
+  .token_absolute {
+    padding: 0px 50px !important;
+  }
+}
+ 
+

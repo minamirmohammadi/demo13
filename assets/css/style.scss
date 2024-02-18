@@ -1,0 +1,635 @@
+body {
+  font-family: Tahoma, Arial, sans-serif;
+}
+.header_title,
+h1 {
+  @media ((min-width: 830px)and (max-width: 1000px)) {
+    font-size: 200% !important;
+  }
+  @media (max-width: 830px) {
+    font-size: 200% !important;
+    width: 100% !important;
+  }
+  @media (max-width: 300px) {
+    font-size: 200% !important;
+  }
+}
+@media (max-width: 830px) {
+  .sub_title {
+    justify-content: start !important;
+  }
+  .title {
+    text-align: right !important;
+  }
+  p {
+    width: 100% !important;
+  }
+}
+
+
+// header//////////////////////////////////////////////////////////////////////////////////////////
+.banner {
+  background-color: #1a0f52;
+  background-image: url(https://elemana.ir/asri/13/wp-content/uploads/2022/04/bg-section1.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn_box {
+  @media (max-width: 640px) {
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 830px) {
+  .banner .container {
+    flex-wrap: wrap !important;
+    gap: 120px !important;
+    .header-right {
+      width: 100% !important;
+    }
+  }
+  .header_left {
+    width: 100% !important;
+  }
+}
+///////////////////////////////////////
+.shape_2 {
+  animation: shape_2 3s infinite alternate ;
+  position: relative !important;
+}
+@keyframes shape_2 {
+  from {
+    right: 50px;
+  }
+  to {
+    right: -10px;
+  }
+}
+.shape_1 {
+  animation: shape_1 7s infinite normal;
+  position: relative;
+}
+@keyframes shape_1 {
+  0% {
+    transform: translate(-30px, 0px);
+  }
+  25% {
+    transform: translate(0px, 40px);
+  }
+  75% {
+    transform: translate(30px, 0px);
+  }
+  100% {
+    transform: translate(-30px, 0px);
+  }
+}
+.btn_head_animat-1,
+.r_to_l_animat1 {
+  position: relative;
+  animation: r_to_l 0.5s;
+}
+.btn_head_animat-2,
+.r_to_l_animat2 {
+  position: relative;
+  animation: r_to_l 1s;
+}
+@keyframes r_to_l {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 0px;
+  }
+}
+.shape4_animat {
+  animation: shape4_animat 2s infinite alternate;
+}
+@keyframes shape4_animat {
+  from {
+    top: -70px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+// key_attribute//////////////////////////////////////////////////////////////////////////////////////
+// .key_attribute {
+// }
+@media (max-width: 1000px) {
+  .atrribute {
+    width: 47% !important;
+    margin-top: 0px !important;
+    transition: all 1s !important;
+    @media (max-width: 768px) {
+      width: 100% !important;
+    }
+  }
+  .atri_mb {
+    margin-bottom: 120px !important;
+  }
+}
+
+@mixin gradiant($color, $color2) {
+  background: linear-gradient(180deg, $color, $color2);
+}
+@mixin before($back_color) {
+  background-color: $back_color;
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  top: 105px;
+  left: 85px;
+  transform: rotate(45deg);
+}
+.one {
+  @include gradiant(#fe7a8c, #fcbc9f);
+  &::before {
+    @include before(#fe7a8c);
+  }
+}
+.two {
+  @include gradiant(#00a0f8, #0071e1);
+  &::before {
+    @include before(#0180ff);
+  }
+}
+.three {
+  @include gradiant(#e45793, #cb42ce);
+  &::before {
+    @include before(#e220e6);
+  }
+}
+.four {
+  @include gradiant(#41b6fd, #20d5fe);
+  &::before {
+    @include before(#1bc3e9);
+  }
+}
+
+// kripto///////////////////////////////////////////////////////////////////////////////////////////////////
+.kripto {
+  background-color: #25126b !important;
+  background-image: url(https://elemana.ir/asri/13/wp-content/uploads/2022/04/bg-section3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 830px) {
+  .kripto .container {
+    flex-wrap: wrap !important;
+  }
+  .kripto_right {
+    width: 100% !important;
+    @media (max-width: 480px) {
+      margin-bottom: 30vw !important;
+    }
+  }
+  .kripto_left .kripto_left_content {
+    margin-right: 0px !important;
+    width: 100% !important;
+  }
+}
+.check_box div {
+  @media (max-width: 1000px) {
+    width: 50% !important;
+  }
+  @media (max-width: 480px) {
+    width: 100% !important;
+  }
+}
+
+// salse_awards//////////////////////////////////////////////////////////////////////////////////////////////
+.salse_awards {
+  background-image: url(https://elemana.ir/asri/13/wp-content/uploads/2022/04/bg-section4.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media ((min-width: 1200px)and (max-width:1300px)) {
+  .salse_right img {
+    height: 100% !important;
+    margin-right: 30px !important;
+  }
+  .span_width {
+    margin-right: -10px !important;
+  }
+  .salse_sub_span_box {
+    margin-bottom: 80px !important;
+  }
+  .salse_absolute {
+    margin-left: -10px !important;
+  }
+  .span_circle {
+    margin-right: 13px !important;
+  }
+}
+@media ((min-width: 1000px)and (max-width:1199px)) {
+  .salse_right img {
+    margin-right: 23px !important;
+  }
+  .span_width {
+    margin-right: -15px !important;
+  }
+  .salse_sub_span_box {
+    margin-bottom: 60px !important;
+  }
+  .span_circle {
+    margin-right: 13px !important;
+  }
+}
+@media ((min-width: 830px) and (max-width: 1000px)) {
+  .salse_right {
+    width: 50% !important;
+  }
+  .salse_left {
+    width: 50% !important;
+  }
+}
+@media (max-width: 1000px) {
+  .salse_left,
+  .salse_right {
+    width: 100% !important;
+  }
+  .salse_right img {
+    margin-right: 0px !important;
+  }
+  .salse_span_box {
+    display: none !important;
+  }
+}
+@media (max-width: 830px) {
+  .salse_awards .container {
+    flex-wrap: wrap !important;
+  }
+  .salse_left {
+    margin-right: 0px !important;
+    margin-top: -90px !important;
+  }
+}
+.salse-bg-purple {
+  @include gradiant(#e45793, #cb42ce);
+}
+.salse_bg_blue {
+  @include gradiant(#41b6fd, #20d5fe);
+}
+.salse_bg_pink {
+  @include gradiant(#fe7a8c, #fcbc9f);
+}
+// token ///////////////////////////////////////////////////////////////////////////////////////////////////
+@media ((min-width: 830px)and (max-width: 1000px)) {
+  .token_right,
+  .token_left {
+    width: 50% !important;
+    .sub_counter {
+      font-size: small !important;
+    }
+    .token_right p {
+      width: 90% !important;
+    }
+    .token_absolute {
+      width: 80% !important;
+      left: 30px !important;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .token .container {
+    flex-wrap: wrap !important;
+    // gap: 50px !important;
+  }
+  .token_right,
+  .token_left {
+    width: 100% !important;
+  }
+  .token_left {
+    margin-top: 120px !important;
+    .token_absolute {
+      height: 600px !important;
+      @media (max-width: 360px) {
+        height: 550px !important;
+      }
+    }
+  }
+}
+.width_animat_token {
+  position: relative;
+  animation: width_animat 1s;
+}
+@keyframes width_animat {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+.r_to_l_animat_token {
+  position: relative;
+  animation: r_to_l_token 1s;
+}
+@keyframes r_to_l_token {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 0px;
+  }
+}
+// platform/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.platform {
+  background-image: url(https://elemana.ir/asri/13/wp-content/uploads/2022/04/bg-section5.jpg);
+  background-position: top center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 830px) {
+  .platform {
+    padding-top: 800px !important;
+    h1 {
+      text-align: right !important;
+    }
+  }
+  .main_top_platform {
+    flex-direction: column !important;
+    border-bottom-right-radius: 10px !important;
+    img {
+      width: 100% !important;
+    }
+    .top_left {
+      justify-content: center;
+      width: 100% !important;
+      border-top-left-radius: 0px !important;
+      border-bottom-right-radius: 10px !important;
+      padding: 40px 0px !important;
+      .pl_span_box {
+        flex-direction: row;
+        margin-right: 0px !important;
+      }
+    }
+  }
+  .buttom_plarform {
+    flex-direction: column !important;
+    justify-content: start !important;
+    height: 500px !important;
+  }
+  .buttom_plarform .div_p {
+    width: 100% !important;
+  }
+
+  .img_box {
+    flex-wrap: wrap !important;
+  }
+  .img_box div {
+    width: 40% !important;
+  }
+  .img_box div img {
+    width: 60% !important;
+  }
+}
+// algoritm///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.algoritm {
+  background-image: url(https://elemana.ir/asri/13/wp-content/uploads/2022/04/bg-section6.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1000px) {
+  .algoritm_left {
+    padding-top: 0px !important;
+    .btn {
+      margin-top: 20px !important;
+    }
+    .alg_span_box {
+      width: 100% !important;
+    }
+  }
+  .alforitm_left_content {
+    flex-direction: column !important;
+    p {
+      width: 100% !important;
+    }
+  }
+}
+@media (max-width: 830px) {
+  .algoritm_left,
+  .algoritm_right {
+    width: 100% !important;
+    img {
+      width: 90% !important;
+    }
+  }
+  .algoritm .container {
+    flex-wrap: wrap !important;
+    gap: 50px !important;
+  }
+}
+// pricing/////////////////////////////////////////////////////////////////////////////////////////////////////////
+@mixin txt_gradiant($color, $color2) {
+  background: linear-gradient(180deg, $color, $color2);
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+.txt_gradiant,
+.icon_gradiant {
+  @include txt_gradiant(#00c3a0, #0485d0);
+}
+.bxs-badge {
+  @include txt_gradiant(#fe7a8c, #fcbc9f);
+}
+@media (max-width: 1000px) {
+  .main_price {
+    flex-wrap: wrap !important;
+    // gap: 60px !important;
+  }
+  .price_mb {
+    margin-bottom: 120px !important;
+  }
+  .price {
+    width: 47% !important;
+    @media (max-width: 768px) {
+      width: 100% !important;
+    }
+  }
+}
+.shape7_animat {
+  animation: shape7_animat 0.2s infinite alternate;
+  position: relative;
+}
+@keyframes shape7_animat {
+  from {
+    top: -15px;
+  }
+  to {
+    top: -5px;
+  }
+}
+
+.shape2_pricing_animat {
+  animation: shape2_pricing_animat 2s infinite alternate;
+  position: relative;
+}
+@keyframes shape2_pricing_animat {
+  from {
+    top: -70px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.shape3_pricing_animat {
+  animation: shape3_pricing_animat 2s infinite normal;
+  position: relative;
+}
+@keyframes shape3_pricing_animat {
+  from {
+  transform: rotate(0deg);
+  }
+  to {
+  transform: rotate(360deg);
+    
+  }
+}
+// posting//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.postes {
+  background-image: url(https://elemana.ir/asri/13/wp-content/uploads/2022/04/bg-section7.jpg);
+  background-position: bottom -100px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+@media (max-width: 830px) {
+  .postes .container {
+    flex-wrap: wrap !important;
+    gap: 50px !important;
+  }
+
+  .post_right,
+  .post_left {
+    width: 100% !important;
+  }
+}
+  
+// frequently_questions//////////////////////////////////////////////////////////////////////////////////////////////////
+.questions {
+  background-image: url(https://elemana.ir/asri/13/wp-content/uploads/2022/04/bg-section8-e1670939850985.jpg) !important;
+  background-position: right -100px bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+// footer///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.item_footer span {
+  transition: all 1s;
+}
+.item_footer:hover span {
+  height: 1px;
+  top: 20px;
+}
+
+///////////////////////////////////////////////////////////animation///////////////////////////////////////////////////////////////
+@keyframes b_to_t {
+  from {
+    bottom: -250px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+.one_animat {
+  position: relative;
+  animation: b_to_t 0.7s;
+}
+.two_animat {
+  position: relative;
+  animation: b_to_t 1s;
+}
+.three_animat {
+  position: relative;
+  animation: b_to_t 1.2s;
+}
+.four_animat {
+  position: relative;
+  animation: b_to_t 1.5s;
+}
+.five_animat {
+  position: relative;
+  animation: b_to_t 2s;
+}
+///////////////////////////////////////
+@keyframes scale_animat {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.scale_animat {
+  position: relative;
+  animation: scale_animat 1s;
+}
+//////////////////////////////////////////
+.width_animat1 {
+  position: relative;
+  animation: width_animat1 0.5s;
+}
+.width_animat2 {
+  position: relative;
+  animation: width_animat2 0.8s;
+}
+.width_animat3 {
+  position: relative;
+  animation: width_animat3 1.2s;
+}
+@keyframes width_animat1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 45%;
+  }
+}
+@keyframes width_animat2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 62%;
+  }
+}
+@keyframes width_animat3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 32%;
+  }
+}
+///////////////////////////////////////////
+.l_to_r_animat1 {
+  position: relative;
+  animation: l_to_r 1s;
+}
+.l_to_r_animat2 {
+  position: relative;
+  animation: l_to_r 1.3s;
+}
+.l_to_r_animat3 {
+  position: relative;
+  animation: l_to_r 1.7s;
+}
+@keyframes l_to_r {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0px;
+  }
+}
+/////////////////////////////////////////////
